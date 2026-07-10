@@ -71,24 +71,17 @@
 <p align="center">
 <img src="assets/wave.svg" width="100%">
 </p>
-## 📊 GitHub Analytics
+
+#    📊  GitHub Analytics
 
 <p align="center">
 
-<img width="49%"
-src="https://github-readme-stats.vercel.app/api?username=abhinavvv-hub&show_icons=true&theme=tokyonight&hide_border=true&count_private=true"/>
 
 <img width="49%"
 src="https://streak-stats.demolab.com?user=abhinavvv-hub&theme=tokyonight&hide_border=true"/>
 
 </p>
 
-<p align="center">
-
-<img width="42%"
-src="https://github-readme-stats.vercel.app/api/top-langs/?username=abhinavvv-hub&layout=compact&theme=tokyonight&hide_border=true&langs_count=8"/>
-
-</p>
 
 <p align="center">
 <img src="assets/wave.svg" width="100%">
@@ -106,18 +99,7 @@ src="https://github-readme-stats.vercel.app/api/top-langs/?username=abhinavvv-hu
 <img src="assets/wave.svg" width="100%">
 </p>
 
-# 🏆 GitHub Trophies
 
-<p align="center">
-
-<img src="https://github-profile-trophy.vercel.app/?username=abhinavvv-hub&theme=tokyonight&no-frame=true&row=1&column=6"/>
-
-</p>
-
-
-<p align="center">
-<img src="assets/wave.svg" width="100%">
-</p>
 
 # 📚 Research
 
