@@ -71,19 +71,24 @@
 <p align="center">
 <img src="assets/wave.svg" width="100%">
 </p>
-# 📊 GitHub Analytics
+## 📊 GitHub Analytics
 
-<div align="center">
+<p align="center">
 
-<img width="49%" src="https://github-readme-stats.vercel.app/api?username=abhinavvv-hub&show_icons=true&theme=tokyonight&hide_border=true"/>
+<img width="49%"
+src="https://github-readme-stats.vercel.app/api?username=abhinavvv-hub&show_icons=true&theme=tokyonight&hide_border=true&count_private=true"/>
 
-<img width="49%" src="https://github-readme-streak-stats.herokuapp.com/?user=abhinavvv-hub&theme=tokyonight&hide_border=true"/>
+<img width="49%"
+src="https://streak-stats.demolab.com?user=abhinavvv-hub&theme=tokyonight&hide_border=true"/>
 
-<br><br>
+</p>
 
-<img width="42%" src="https://github-readme-stats.vercel.app/api/top-langs/?username=abhinavvv-hub&layout=compact&theme=tokyonight&hide_border=true"/>
+<p align="center">
 
-</div>
+<img width="42%"
+src="https://github-readme-stats.vercel.app/api/top-langs/?username=abhinavvv-hub&layout=compact&theme=tokyonight&hide_border=true&langs_count=8"/>
+
+</p>
 
 <p align="center">
 <img src="assets/wave.svg" width="100%">
