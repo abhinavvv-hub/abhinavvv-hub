@@ -2,7 +2,8 @@
 
 # Hi, I'm Abhinav Kumar 👋
 
-### B.Tech Student @ IIT Guwahati
+### B.Tech Student @ BIT Mesra - Patna Campus
+### B.Sc (Hons.) Student @ IIT Guwahati
 ### Software Engineering | Quantitative Finance | Competitive Programming
 
 [![LeetCode](https://img.shields.io/badge/LeetCode-Abhinav1724__-FFA116?style=for-the-badge&logo=leetcode&logoColor=white)](https://leetcode.com/u/Abhinav1724__/)
@@ -101,9 +102,9 @@ Focused on:
 
 <p align="center">
 
-<img height="170" src="https://github-readme-stats.vercel.app/api?username=YOUR_USERNAME&show_icons=true&theme=tokyonight"/>
+<img height="170" src="https://github-readme-stats.vercel.app/api?username=abhinavvv-hub&show_icons=true&theme=tokyonight"/>
 
-<img height="170" src="https://github-readme-streak-stats.herokuapp.com/?user=YOUR_USERNAME&theme=tokyonight"/>
+<img height="170" src="https://github-readme-streak-stats.herokuapp.com/?user=abhinavvv-hub&theme=tokyonight"/>
 
 </p>
 
@@ -113,7 +114,7 @@ Focused on:
 
 <p align="center">
 
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=YOUR_USERNAME&layout=compact&theme=tokyonight"/>
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=abhinavvv-hub&layout=compact&theme=tokyonight"/>
 
 </p>
 
@@ -123,7 +124,7 @@ Focused on:
 
 <p align="center">
 
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=YOUR_USERNAME&theme=tokyo-night"/>
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=abhinavvv-hub&theme=tokyo-night"/>
 
 </p>
 
@@ -141,6 +142,6 @@ Focused on:
 
 # Contact
 
-- GitHub: https://github.com/YOUR_USERNAME
+- GitHub: https://github.com/abhinavvv-hub
 - LinkedIn: YOUR_LINKEDIN
 - Email: YOUR_EMAIL
