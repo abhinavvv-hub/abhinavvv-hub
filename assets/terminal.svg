@@ -52,16 +52,16 @@ abhinav@github:~$
 
 <!-- Content -->
 
-<text x="50" y="95" class="label">󰣇 Education</text>
+<text x="50" y="95" class="label">Education</text>
 
 <text x="70" y="128" class="text">├─ B.Tech @ BIT Mesra, Patna Campus</text>
 <text x="70" y="158" class="text">└─ B.Sc.(Hons.) @ IIT Guwahati</text>
 
-<text x="50" y="205" class="label">󰈙 Languages</text>
+<text x="50" y="205" class="label">Languages</text>
 
 <text x="70" y="238" class="text">C++ • Python • Java • JavaScript • SQL</text>
 
-<text x="50" y="285" class="label">󰲋 Interests</text>
+<text x="50" y="285" class="label">Interests</text>
 
 <text x="70" y="318" class="text">Software Engineering</text>
 <text x="70" y="348" class="text">Quantitative Finance</text>
@@ -70,7 +70,7 @@ abhinav@github:~$
 
 <!-- Right Column -->
 
-<text x="500" y="95" class="label">󰚩 Research</text>
+<text x="500" y="95" class="label">Research</text>
 
 <text x="520" y="128" class="text">
 Hermite Wavelet Solution
@@ -84,7 +84,7 @@ of Singularly Perturbed
 Boundary Value Problems
 </text>
 
-<text x="500" y="245" class="label">󰍡 Currently Learning</text>
+<text x="500" y="245" class="label">Currently Learning</text>
 
 <text x="520" y="278" class="text">
 System Design
@@ -98,7 +98,7 @@ Low Latency Systems
 Deep Learning Architectures
 </text>
 
-<text x="500" y="395" class="label">󰌠 Competitive Profiles</text>
+<text x="500" y="395" class="label">Competitive Profiles</text>
 
 <text x="520" y="428" class="text">
 LeetCode   : Abhinav1724__
