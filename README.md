@@ -19,24 +19,27 @@
 ```cpp
 class Abhinav {
 public:
-    string education = "B.Tech @ IIT Guwahati";
+    string education1 = "B.Sc (Hons.) @ IIT Guwahati";
+    string education2 = "B.Tech @ BIT Mesra - Patna Campus";
 
     vector<string> interests = {
         "Software Engineering",
         "Quantitative Finance",
         "Competitive Programming",
         "Algorithms",
-        "Machine Learning"
+        "Machine and Deep Learning"
     };
 
     vector<string> languages = {
         "C++",
         "Python",
+        "Java",
+        "JavaScript",
         "SQL"
     };
 
     string currently_learning =
-        "System Design | Low Latency Systems | Advanced DSA";
+        "System Design | Low Latency Systems | Deep Learning Architectures";
 
     string research =
         "Hermite Wavelet Solution of Singularly Perturbed Boundary Value Problems";
@@ -143,5 +146,5 @@ Focused on:
 # Contact
 
 - GitHub: https://github.com/abhinavvv-hub
-- LinkedIn: YOUR_LINKEDIN
-- Email: YOUR_EMAIL
+- LinkedIn: https://www.linkedin.com/in/abhinav-kumar-0226a3313/
+- Email: abhinav.kr.1024@gmail.com
