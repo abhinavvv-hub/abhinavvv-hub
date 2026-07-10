@@ -22,7 +22,9 @@
 
 </div>
 
----
+<p align="center">
+<img src="assets/wave.svg" width="100%">
+</p>
 
 # 💻 Fastfetch
 
@@ -32,7 +34,9 @@
 
 </div>
 
----
+<p align="center">
+<img src="assets/wave.svg" width="100%">
+</p>
 
 # 🚀 Competitive Programming
 
@@ -52,7 +56,9 @@
 
 </div>
 
----
+<p align="center">
+<img src="assets/wave.svg" width="100%">
+</p>
 
 # ⚡ Tech Stack
 
@@ -62,8 +68,9 @@
 
 </div>
 
----
-
+<p align="center">
+<img src="assets/wave.svg" width="100%">
+</p>
 # 📊 GitHub Analytics
 
 <div align="center">
@@ -78,7 +85,9 @@
 
 </div>
 
----
+<p align="center">
+<img src="assets/wave.svg" width="100%">
+</p>
 
 # 📈 Contribution Graph
 
@@ -88,7 +97,9 @@
 
 </div>
 
----
+<p align="center">
+<img src="assets/wave.svg" width="100%">
+</p>
 
 # 🏆 GitHub Trophies
 
@@ -98,7 +109,9 @@
 
 </div>
 
----
+<p align="center">
+<img src="assets/wave.svg" width="100%">
+</p>
 
 # 📚 Research
 
@@ -108,8 +121,9 @@
 - Python Implementation
 - Publication in Progress
 
----
----
+<p align="center">
+<img src="assets/wave.svg" width="100%">
+</p>
 
 # 🐍 Contribution Snake
 
