@@ -54,11 +54,7 @@ Abhinav {
 
 <p align="center">
 
-<img src="https://skillicons.dev/icons?i=cpp,python,java,javascript,mysql,git,github,linux,vscode"/>
-
-<br><br>
-
-<img src="https://skillicons.dev/icons?i=tensorflow,pytorch"/>
+<img src="https://skillicons.dev/icons?i=cpp,python,java,javascript,mysql,git,linux,tensorflow,pytorch"/>
 
 </p>
 
