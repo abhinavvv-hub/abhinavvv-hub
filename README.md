@@ -1,150 +1,136 @@
 <div align="center">
 
-# Hi, I'm Abhinav Kumar 👋
+# Abhinav Kumar
 
-### B.Tech Student @ BIT Mesra - Patna Campus
-### B.Sc (Hons.) Student @ IIT Guwahati
-### Software Engineering | Quantitative Finance | Competitive Programming
+### Software Engineering • Quantitative Finance • Competitive Programming
 
-[![LeetCode](https://img.shields.io/badge/LeetCode-Abhinav1724__-FFA116?style=for-the-badge&logo=leetcode&logoColor=white)](https://leetcode.com/u/Abhinav1724__/)
-[![Codeforces](https://img.shields.io/badge/Codeforces-Abhinav___1024-1F8ACB?style=for-the-badge&logo=codeforces&logoColor=white)](https://codeforces.com/profile/Abhinav___1024)
-[![CodeChef](https://img.shields.io/badge/CodeChef-abhinav_2410-5B4638?style=for-the-badge&logo=codechef&logoColor=white)](https://www.codechef.com/users/abhinav_2410)
+**B.Tech @ BIT Mesra, Patna Campus** • **B.Sc. (Hons.) @ IIT Guwahati**
+
+<p>
+<a href="https://github.com/abhinavvv-hub"><img src="https://img.shields.io/badge/GitHub-abhinavvv--hub-181717?style=for-the-badge&logo=github"></a>
+<a href="https://www.linkedin.com/in/abhinav-kumar-0226a3313/"><img src="https://img.shields.io/badge/LinkedIn-Abhinav_Kumar-0A66C2?style=for-the-badge&logo=linkedin"></a>
+<a href="mailto:abhinav.kr.1024@gmail.com"><img src="https://img.shields.io/badge/Email-Contact-EA4335?style=for-the-badge&logo=gmail"></a>
+</p>
+
+<p>
+<a href="https://leetcode.com/u/Abhinav1724__/"><img src="https://img.shields.io/badge/LeetCode-Abhinav1724__-FFA116?style=for-the-badge&logo=leetcode"></a>
+<a href="https://codeforces.com/profile/Abhinav___1024"><img src="https://img.shields.io/badge/Codeforces-Abhinav___1024-1F8ACB?style=for-the-badge&logo=codeforces"></a>
+<a href="https://www.codechef.com/users/abhinav_2410"><img src="https://img.shields.io/badge/CodeChef-abhinav__2410-5B4638?style=for-the-badge&logo=codechef"></a>
+</p>
 
 </div>
 
 ---
 
-# About Me
+## About Me
 
 ```cpp
-class Abhinav {
-public:
-    string education1 = "B.Sc (Hons.) @ IIT Guwahati";
-    string education2 = "B.Tech @ BIT Mesra - Patna Campus";
+Abhinav {
+    Education:
+        • B.Tech @ BIT Mesra
+        • B.Sc. (Hons.) @ IIT Guwahati
 
-    vector<string> interests = {
-        "Software Engineering",
-        "Quantitative Finance",
-        "Competitive Programming",
-        "Algorithms",
-        "Machine and Deep Learning"
-    };
+    Interests:
+        • Software Engineering
+        • Quantitative Finance
+        • Competitive Programming
+        • Machine & Deep Learning
 
-    vector<string> languages = {
-        "C++",
-        "Python",
-        "Java",
-        "JavaScript",
-        "SQL"
-    };
+    Learning:
+        • System Design
+        • Low Latency Systems
+        • Deep Learning Architectures
 
-    string currently_learning =
-        "System Design | Low Latency Systems | Deep Learning Architectures";
-
-    string research =
-        "Hermite Wavelet Solution of Singularly Perturbed Boundary Value Problems";
-};
+    Research:
+        Hermite Wavelet Solution of
+        Singularly Perturbed Boundary
+        Value Problems
+}
 ```
 
 ---
 
-# Tech Stack
-
-### Languages
-
-- C++
-- Python
-- SQL
-
-### CS Fundamentals
-
-- Data Structures
-- Algorithms
-- OOP
-- DBMS
-- Operating Systems
-- Computer Networks
-
-### Tools
-
-- Git
-- GitHub
-- Linux
-- VS Code
-
----
-
-# Competitive Programming
-
-- LeetCode
-- Codeforces
-- CodeChef
-
-Focused on:
-
-- Graph Algorithms
-- Dynamic Programming
-- Trees
-- Number Theory
-- Binary Search
-- Segment Trees
-
----
-
-# Research
-
-### Hermite Wavelet Solution of Singularly Perturbed Boundary Value Problems
-
-- Mathematical modelling
-- Python implementation
-- Publication in progress
-
----
-
-# GitHub Stats
+## Tech Stack
 
 <p align="center">
 
-<img height="170" src="https://github-readme-stats.vercel.app/api?username=abhinavvv-hub&show_icons=true&theme=tokyonight"/>
+<img src="https://skillicons.dev/icons?i=cpp,python,java,javascript,mysql,git,github,linux,vscode"/>
 
-<img height="170" src="https://github-readme-streak-stats.herokuapp.com/?user=abhinavvv-hub&theme=tokyonight"/>
+<br><br>
+
+<img src="https://skillicons.dev/icons?i=tensorflow,pytorch"/>
 
 </p>
 
 ---
 
-# Most Used Languages
+## GitHub Statistics
 
 <p align="center">
 
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=abhinavvv-hub&layout=compact&theme=tokyonight"/>
+<img width="49%" src="https://github-readme-stats.vercel.app/api?username=abhinavvv-hub&show_icons=true&theme=tokyonight&hide_border=true"/>
+
+<img width="49%" src="https://github-readme-streak-stats.herokuapp.com/?user=abhinavvv-hub&theme=tokyonight&hide_border=true"/>
+
+</p>
+
+<p align="center">
+
+<img width="45%" src="https://github-readme-stats.vercel.app/api/top-langs/?username=abhinavvv-hub&layout=compact&theme=tokyonight&hide_border=true"/>
 
 </p>
 
 ---
 
-# Contribution Graph
+## Highlights
+
+| 💻 Competitive Programming | 📚 Research |
+|:-------------------------|:-----------|
+| • LeetCode | Hermite Wavelet Solution of Singularly Perturbed Boundary Value Problems |
+| • Codeforces | Python Implementation |
+| • CodeChef | Publication in Progress |
+| • DSA • Graphs • DP • Trees | Mathematical Modelling |
+
+---
+
+## 2026 Goals
+
+🎯 Codeforces Expert
+
+🎯 2100+ LeetCode Rating
+
+🎯 Software Engineering Internship
+
+🎯 Quant / HFT Preparation
+
+🎯 Publish Research Paper
+
+---
+
+## Contribution Graph
 
 <p align="center">
 
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=abhinavvv-hub&theme=tokyo-night"/>
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=abhinavvv-hub&theme=tokyo-night&hide_border=true"/>
 
 </p>
 
 ---
 
-# Current Goals
+<div align="center">
 
-- Reach Expert on Codeforces
-- 2100+ on LeetCode
-- Crack Software Engineering internships
-- Prepare for Quant/HFT interviews
-- Publish research paper
+### Let's Connect
 
----
+<a href="mailto:abhinav.kr.1024@gmail.com">
+<img src="https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail">
+</a>
 
-# Contact
+<a href="https://www.linkedin.com/in/abhinav-kumar-0226a3313/">
+<img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin">
+</a>
 
-- GitHub: https://github.com/abhinavvv-hub
-- LinkedIn: https://www.linkedin.com/in/abhinav-kumar-0226a3313/
-- Email: abhinav.kr.1024@gmail.com
+<a href="https://github.com/abhinavvv-hub">
+<img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github">
+</a>
+
+</div>
