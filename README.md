@@ -103,11 +103,12 @@
 
 # 🏆 GitHub Trophies
 
-<div align="center">
+<p align="center">
 
-<img src="https://github-profile-trophy.vercel.app/?username=abhinavvv-hub&theme=tokyonight&column=4&margin-w=15&margin-h=15"/>
+<img src="https://github-profile-trophy.vercel.app/?username=abhinavvv-hub&theme=tokyonight&no-frame=true&row=1&column=6"/>
 
-</div>
+</p>
+
 
 <p align="center">
 <img src="assets/wave.svg" width="100%">
