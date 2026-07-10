@@ -97,13 +97,9 @@ Abhinav {
 
 🎯 Codeforces Expert
 
-🎯 2100+ LeetCode Rating
-
 🎯 Software Engineering Internship
 
 🎯 Quant / HFT Preparation
-
-🎯 Publish Research Paper
 
 ---
 
