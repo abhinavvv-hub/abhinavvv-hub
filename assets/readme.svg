@@ -1,182 +1,307 @@
-<svg width="1000" height="650" viewBox="0 0 1000 650" xmlns="http://www.w3.org/2000/svg">
+<svg width="100%" height="100%" viewBox="0 0 1000 650" xmlns="http://www.w3.org/2000/svg" style="max-width: 960px; display: block; margin: 0 auto; background: #0d0d1a; border-radius: 16px; font-family: 'JetBrains Mono', monospace;">
   <defs>
-    <!-- Fonts -->
     <style>
-      @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700;800&amp;display=swap');
+      @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700;800&amp;display=swap');
       
-      * {
-        font-family: 'JetBrains Mono', monospace;
+      text { font-family: 'JetBrains Mono', 'Courier New', monospace; }
+      
+      .waybar-text { font-size: 11px; fill: #a6adc8; font-weight: 500; }
+      .waybar-accent { font-size: 11px; font-weight: 700; }
+      .term-title { font-size: 13px; fill: #f5a97f; font-weight: 700; letter-spacing: 0.5px; }
+      .term-text { font-size: 12.5px; fill: #cad3f5; font-weight: 400; }
+      .term-muted { font-size: 12px; fill: #6e738d; font-weight: 400; }
+      .term-highlight { fill: #c6a0f6; font-weight: 700; }
+      .term-prompt { fill: #a6da95; font-weight: 700; font-size: 13px; }
+      .term-dir { fill: #8aadf4; font-weight: 700; }
+      .term-accent { fill: #f5a97f; font-weight: 700; }
+      .term-pink { fill: #f5bde6; font-weight: 700; }
+      .term-green { fill: #a6da95; font-weight: 700; font-size: 11px; }
+      .ascii-art { font-size: 9px; fill: #b7bdf8; white-space: pre; font-weight: 700; letter-spacing: 0.5px; }
+      .table-header { font-size: 11px; font-weight: 700; }
+      .table-cell { font-size: 11px; font-weight: 400; }
+      
+      .card { transition: filter 0.35s ease; cursor: default; }
+      .card:hover { filter: brightness(1.08) drop-shadow(0 0 12px rgba(198, 160, 246, 0.25)); }
+      .window-glow { transition: opacity 0.5s ease; }
+      .card:hover .window-glow { opacity: 0.12; }
+      
+      @keyframes ambientPulse {
+        0%, 100% { opacity: 0.07; }
+        50% { opacity: 0.14; }
       }
-      .waybar-text { font-size: 12px; fill: #cdd6f4; font-weight: 700; }
-      .term-title { font-size: 14px; fill: #f38ba8; font-weight: 700; }
-      .term-text { font-size: 13px; fill: #a6adc8; }
-      .term-highlight { fill: #cba6f7; font-weight: 700; }
-      .term-prompt { fill: #a6e3a1; font-weight: 700; }
-      .term-dir { fill: #89b4fa; font-weight: 700; }
-      .ascii-art { font-size: 10px; fill: #f5c2e7; white-space: pre; }
+      @keyframes softBlink {
+        0%, 100% { opacity: 1; }
+        50% { opacity: 0.35; }
+      }
+      .animate-ambient { animation: ambientPulse 4s ease-in-out infinite; }
+      .animate-cursor { animation: softBlink 1.2s step-end infinite; }
     </style>
 
-    <!-- Glowing Background Filters -->
-    <filter id="blur-heavy" x="-50%" y="-50%" width="200%" height="200%">
+    <!-- Filters -->
+    <filter id="blur-ambient" x="-60%" y="-60%" width="220%" height="220%">
       <feGaussianBlur stdDeviation="80" />
     </filter>
-    
-    <!-- Window Drop Shadow -->
-    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
-      <feDropShadow dx="0" dy="10" stdDeviation="15" flood-color="#000000" flood-opacity="0.6"/>
+    <filter id="shadow-card" x="-6%" y="-6%" width="112%" height="112%">
+      <feDropShadow dx="0" dy="10" stdDeviation="22" flood-color="#000" flood-opacity="0.55"/>
+    </filter>
+    <filter id="shadow-bar" x="-4%" y="-4%" width="108%" height="108%">
+      <feDropShadow dx="0" dy="3" stdDeviation="6" flood-color="#000" flood-opacity="0.4"/>
     </filter>
 
-    <!-- Window Border Gradients -->
-    <linearGradient id="border-active" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#f38ba8" />
-      <stop offset="50%" stop-color="#cba6f7" />
-      <stop offset="100%" stop-color="#89b4fa" />
+    <!-- Gradients -->
+    <linearGradient id="border-w1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#c6a0f6"/>
+      <stop offset="45%" stop-color="#f5bde6"/>
+      <stop offset="100%" stop-color="#8aadf4"/>
     </linearGradient>
-    
-    <linearGradient id="border-inactive" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#a6e3a1" />
-      <stop offset="100%" stop-color="#94e2d5" />
+    <linearGradient id="border-w2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#a6da95"/>
+      <stop offset="100%" stop-color="#8bd5ca"/>
     </linearGradient>
+    <linearGradient id="border-w3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#8aadf4"/>
+      <stop offset="50%" stop-color="#c6a0f6"/>
+      <stop offset="100%" stop-color="#f5a97f"/>
+    </linearGradient>
+    <linearGradient id="bar-1" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ed8796"/>
+      <stop offset="100%" stop-color="#f5a97f"/>
+    </linearGradient>
+    <linearGradient id="bar-2" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#c6a0f6"/>
+      <stop offset="100%" stop-color="#8aadf4"/>
+    </linearGradient>
+    <linearGradient id="bar-3" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#8aadf4"/>
+      <stop offset="100%" stop-color="#8bd5ca"/>
+    </linearGradient>
+    <linearGradient id="bar-4" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#a6da95"/>
+      <stop offset="100%" stop-color="#eed49f"/>
+    </linearGradient>
+
+    <!-- Subtle Grid Pattern -->
+    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse">
+      <path d="M 32 0 L 0 0 0 32" fill="none" stroke="#cad3f5" stroke-width="0.4" opacity="0.04"/>
+    </pattern>
   </defs>
 
-  <!-- ================= BACKGROUND ================= -->
-  <!-- Base Dark -->
-  <rect width="1000" height="650" fill="#11111b" />
-  
-  <!-- Abstract Anime/Vibrant Glows (Mimicking the screenshot's color palette) -->
-  <circle cx="200" cy="150" r="150" fill="#f38ba8" opacity="0.3" filter="url(#blur-heavy)" />
-  <circle cx="800" cy="500" r="200" fill="#cba6f7" opacity="0.25" filter="url(#blur-heavy)" />
-  <circle cx="850" cy="100" r="120" fill="#89b4fa" opacity="0.2" filter="url(#blur-heavy)" />
-  <circle cx="100" cy="550" r="180" fill="#f5c2e7" opacity="0.2" filter="url(#blur-heavy)" />
+  <!-- ===== BACKGROUND ===== -->
+  <rect width="1000" height="650" fill="#0d0d1a" rx="16"/>
+  <rect width="1000" height="650" fill="url(#grid)" rx="16"/>
 
-  <!-- ================= WAYBAR (TOP BAR) ================= -->
-  <rect x="10" y="10" width="980" height="26" rx="6" fill="#1e1e2e" opacity="0.85" stroke="#313244" stroke-width="1"/>
+  <!-- Ambient Glows -->
+  <g class="animate-ambient">
+    <circle cx="200" cy="120" r="180" fill="#ed8796" opacity="0.10" filter="url(#blur-ambient)"/>
+    <circle cx="820" cy="500" r="200" fill="#c6a0f6" opacity="0.10" filter="url(#blur-ambient)"/>
+    <circle cx="860" cy="90" r="150" fill="#8aadf4" opacity="0.09" filter="url(#blur-ambient)"/>
+    <circle cx="70" cy="560" r="170" fill="#f5bde6" opacity="0.09" filter="url(#blur-ambient)"/>
+    <circle cx="500" cy="320" r="220" fill="#a6da95" opacity="0.06" filter="url(#blur-ambient)"/>
+  </g>
+
+  <!-- ===== TOP BAR ===== -->
+  <g filter="url(#shadow-bar)">
+    <rect x="12" y="8" width="976" height="30" rx="9" fill="#181825" opacity="0.92" stroke="#313244" stroke-width="1"/>
+  </g>
   
   <!-- Workspaces -->
-  <rect x="20" y="15" width="24" height="16" rx="8" fill="#cba6f7" />
-  <rect x="48" y="17" width="12" height="12" rx="6" fill="#45475a" />
-  <rect x="64" y="17" width="12" height="12" rx="6" fill="#45475a" />
-  <rect x="80" y="17" width="12" height="12" rx="6" fill="#45475a" />
-  <rect x="96" y="17" width="12" height="12" rx="6" fill="#45475a" />
+  <g transform="translate(24, 15)">
+    <rect x="0" y="0" width="30" height="18" rx="9" fill="#c6a0f6" opacity="0.85"/>
+    <circle cx="40" cy="9" r="5" fill="#494d64" opacity="0.5"/>
+    <circle cx="54" cy="9" r="5" fill="#494d64" opacity="0.5"/>
+    <circle cx="68" cy="9" r="5" fill="#494d64" opacity="0.5"/>
+    <circle cx="82" cy="9" r="5" fill="#494d64" opacity="0.5"/>
+  </g>
 
-  <!-- Center Status -->
-  <text x="500" y="28" class="waybar-text" text-anchor="middle">  16:44:00  |    Sat, 11 Jul</text>
-  
-  <!-- Right Status -->
-  <text x="970" y="28" class="waybar-text" text-anchor="end"> 12%   4.2G  |    Abhinav_5G  |   80%</text>
+  <!-- Center -->
+  <text x="500" y="27" class="waybar-text" text-anchor="middle">
+    <tspan class="waybar-accent" fill="#f5a97f"></tspan> 16:44  <tspan fill="#8bd5ca">│</tspan>  <tspan class="waybar-accent" fill="#a6da95"></tspan> Sat, 11 Jul
+  </text>
 
-  <!-- ================= WINDOW 1: NEOFETCH (Top Left) ================= -->
-  <!-- Shadow & Border -->
-  <rect x="20" y="55" width="465" height="300" rx="10" fill="#181825" opacity="0.85" stroke="url(#border-active)" stroke-width="2" filter="url(#shadow)"/>
-  
-  <!-- Title bar buttons -->
-  <circle cx="40" cy="75" r="5" fill="#f38ba8" />
-  <circle cx="55" cy="75" r="5" fill="#f9e2af" />
-  <circle cx="70" cy="75" r="5" fill="#a6e3a1" />
-  <text x="252" y="80" class="term-title" text-anchor="middle">kitty - neofetch</text>
+  <!-- Right -->
+  <text x="978" y="27" class="waybar-text" text-anchor="end">
+    <tspan class="waybar-accent" fill="#ed8796"></tspan> 12%  <tspan class="waybar-accent" fill="#eed49f"></tspan> 4.2G  <tspan fill="#8bd5ca">│</tspan>  <tspan class="waybar-accent" fill="#8aadf4"></tspan> Abhinav_5G  <tspan fill="#8bd5ca">│</tspan>  <tspan class="waybar-accent" fill="#c6a0f6"></tspan> 80%
+  </text>
 
-  <!-- Neofetch Content -->
-  <g transform="translate(40, 115)">
-    <!-- ASCII Art (Left) -->
-    <text class="ascii-art" y="10">
-       /\_/\
-      ( o.o )
-       &gt; ^ &lt;
-      /  |  \
-     /___|___\
-    </text>
+  <!-- ===== WINDOW 1 — NEOFETCH (Top Left) ===== -->
+  <g class="card">
+    <rect x="18" y="50" width="464" height="286" rx="12" fill="#181825" opacity="0.90" stroke="url(#border-w1)" stroke-width="1.5" filter="url(#shadow-card)"/>
+    <rect x="18" y="50" width="464" height="286" rx="12" fill="url(#border-w1)" opacity="0.03" class="window-glow"/>
     
-    <!-- Info (Right) -->
-    <g transform="translate(130, 0)">
-      <text class="term-highlight" y="10">abhinav<tspan fill="#cdd6f4">@</tspan>hyprland</text>
-      <text class="term-text" y="22">-----------------</text>
-      
-      <text class="term-highlight" y="45">OS<tspan fill="#cdd6f4">:</tspan> <tspan class="term-text">Software Engineer</tspan></text>
-      <text class="term-highlight" y="65">Host<tspan fill="#cdd6f4">:</tspan> <tspan class="term-text">B.Tech @ BIT Mesra</tspan></text>
-      <text class="term-highlight" y="85">Kernel<tspan fill="#cdd6f4">:</tspan> <tspan class="term-text">B.Sc.(Hons.) @ IIT Guwahati</tspan></text>
-      <text class="term-highlight" y="105">Uptime<tspan fill="#cdd6f4">:</tspan> <tspan class="term-text">Learning Continuously</tspan></text>
-      <text class="term-highlight" y="125">Shell<tspan fill="#cdd6f4">:</tspan> <tspan class="term-text">C++, Python, Java, JS, SQL</tspan></text>
-      <text class="term-highlight" y="145">Theme<tspan fill="#cdd6f4">:</tspan> <tspan class="term-text">Quantitative Finance</tspan></text>
-      <text class="term-highlight" y="165">WM<tspan fill="#cdd6f4">:</tspan> <tspan class="term-text">Competitive Programming</tspan></text>
-      
-      <!-- Color Blocks -->
-      <g transform="translate(0, 195)">
-        <rect x="0" y="0" width="12" height="12" fill="#45475a"/>
-        <rect x="15" y="0" width="12" height="12" fill="#f38ba8"/>
-        <rect x="30" y="0" width="12" height="12" fill="#a6e3a1"/>
-        <rect x="45" y="0" width="12" height="12" fill="#f9e2af"/>
-        <rect x="60" y="0" width="12" height="12" fill="#89b4fa"/>
-        <rect x="75" y="0" width="12" height="12" fill="#cba6f7"/>
-        <rect x="90" y="0" width="12" height="12" fill="#94e2d5"/>
-        <rect x="105" y="0" width="12" height="12" fill="#bac2de"/>
+    <!-- Title bar -->
+    <circle cx="40" cy="68" r="5" fill="#ed8796"/>
+    <circle cx="56" cy="68" r="5" fill="#eed49f"/>
+    <circle cx="72" cy="68" r="5" fill="#a6da95"/>
+    <text x="250" y="72" class="term-title" text-anchor="middle">kitty — neofetch</text>
+
+    <g transform="translate(38, 98)">
+      <!-- ASCII Cat -->
+      <text class="ascii-art" x="0" y="0">
+        <tspan x="0" dy="0">  ╭─────╮</tspan>
+        <tspan x="0" dy="13">  │◉  ◉│</tspan>
+        <tspan x="0" dy="13">  │  △  │</tspan>
+        <tspan x="0" dy="13">  ╰─┬┬─╯</tspan>
+        <tspan x="0" dy="13">    ││</tspan>
+        <tspan x="0" dy="13">   ╱  ╲</tspan>
+        <tspan x="0" dy="13">  ╱    ╲</tspan>
+      </text>
+
+      <!-- Info -->
+      <g transform="translate(115, 0)">
+        <text y="8"><tspan class="term-highlight" font-size="14">abhinav</tspan><tspan class="term-muted" font-size="14">@</tspan><tspan class="term-pink" font-size="14">hyprland</tspan></text>
+        <text y="23" class="term-muted">─────────────────</text>
+        
+        <text y="44"><tspan class="term-highlight">OS</tspan><tspan class="term-muted">   :</tspan> <tspan class="term-text">Software Engineer</tspan></text>
+        <text y="63"><tspan class="term-highlight">Host</tspan><tspan class="term-muted"> :</tspan> <tspan class="term-text">B.Tech @ BIT Mesra</tspan></text>
+        <text y="82"><tspan class="term-highlight">Kernel</tspan><tspan class="term-muted">:</tspan> <tspan class="term-text">B.Sc. @ IIT Guwahati</tspan></text>
+        <text y="101"><tspan class="term-highlight">Uptime</tspan><tspan class="term-muted">:</tspan> <tspan class="term-text">Learning Continuously</tspan></text>
+        <text y="120"><tspan class="term-highlight">Shell</tspan><tspan class="term-muted"> :</tspan> <tspan class="term-text">C++, Python, Java, JS, SQL</tspan></text>
+        <text y="139"><tspan class="term-highlight">Theme</tspan><tspan class="term-muted"> :</tspan> <tspan class="term-text">Quantitative Finance</tspan></text>
+        <text y="158"><tspan class="term-highlight">WM</tspan><tspan class="term-muted">   :</tspan> <tspan class="term-text">Competitive Programming</tspan></text>
+
+        <!-- Color Palette -->
+        <g transform="translate(0, 178)">
+          <rect x="0" y="0" width="14" height="14" rx="3" fill="#494d64"/>
+          <rect x="18" y="0" width="14" height="14" rx="3" fill="#ed8796"/>
+          <rect x="36" y="0" width="14" height="14" rx="3" fill="#a6da95"/>
+          <rect x="54" y="0" width="14" height="14" rx="3" fill="#eed49f"/>
+          <rect x="72" y="0" width="14" height="14" rx="3" fill="#8aadf4"/>
+          <rect x="90" y="0" width="14" height="14" rx="3" fill="#c6a0f6"/>
+          <rect x="108" y="0" width="14" height="14" rx="3" fill="#8bd5ca"/>
+          <rect x="126" y="0" width="14" height="14" rx="3" fill="#b8c0e0"/>
+        </g>
       </g>
     </g>
   </g>
 
-  <!-- ================= WINDOW 2: DIRECTORY / PROFILES (Top Right) ================= -->
-  <rect x="515" y="55" width="465" height="300" rx="10" fill="#181825" opacity="0.85" stroke="url(#border-inactive)" stroke-width="1.5" filter="url(#shadow)"/>
-  
-  <text x="747" y="80" class="term-title" text-anchor="middle" fill="#a6e3a1">kitty - zsh</text>
+  <!-- ===== WINDOW 2 — PROFILES (Top Right) ===== -->
+  <g class="card">
+    <rect x="518" y="50" width="464" height="286" rx="12" fill="#181825" opacity="0.90" stroke="url(#border-w2)" stroke-width="1.5" filter="url(#shadow-card)"/>
+    <rect x="518" y="50" width="464" height="286" rx="12" fill="url(#border-w2)" opacity="0.03" class="window-glow"/>
 
-  <g transform="translate(535, 115)">
-    <text y="10"><tspan class="term-prompt">➜</tspan> <tspan class="term-dir">~</tspan> <tspan class="term-text">ls -la Profiles/</tspan></text>
-    
-    <text class="term-text" y="40">drwxr-xr-x  1 abhinav devs  4096 Jul 11 07:38 <tspan class="term-dir">.</tspan></text>
-    <text class="term-text" y="60">drwxr-xr-x 42 abhinav devs  4096 Jul 11 07:38 <tspan class="term-dir">..</tspan></text>
-    
-    <text class="term-text" y="90">-rw-r--r--  1 abhinav devs   256 Jul 11 07:38 <tspan class="term-highlight">GitHub.md</tspan></text>
-    <text class="term-text" y="110">-rw-r--r--  1 abhinav devs   256 Jul 11 07:38 <tspan class="term-highlight">LinkedIn.md</tspan></text>
-    <text class="term-text" y="130">-rw-r--r--  1 abhinav devs   256 Jul 11 07:38 <tspan class="term-highlight">LeetCode.md</tspan></text>
-    <text class="term-text" y="150">-rw-r--r--  1 abhinav devs   256 Jul 11 07:38 <tspan class="term-highlight">Codeforces.md</tspan></text>
-    <text class="term-text" y="170">-rw-r--r--  1 abhinav devs   256 Jul 11 07:38 <tspan class="term-highlight">CodeChef.md</tspan></text>
-    
-    <text y="210"><tspan class="term-prompt">➜</tspan> <tspan class="term-dir">~</tspan> <tspan class="term-text">cat Research.txt</tspan></text>
-    <text class="term-text" y="235">"Hermite Wavelet Solution of Singularly Perturbed BVPs"</text>
+    <text x="750" y="72" class="term-title" text-anchor="middle">kitty — zsh</text>
+
+    <g transform="translate(540, 98)">
+      <text y="5"><tspan class="term-prompt">❯</tspan> <tspan class="term-dir">~</tspan> <tspan class="term-text">ls -la Profiles/</tspan></text>
+      
+      <text y="32" class="term-muted">total 24K</text>
+      <text y="52"><tspan class="term-muted">drwxr-xr-x</tspan>  <tspan class="term-text">abhinav devs  4.0K Jul 11 07:38</tspan>  <tspan class="term-dir">.</tspan></text>
+      <text y="72"><tspan class="term-muted">drwxr-xr-x</tspan>  <tspan class="term-text">abhinav devs  4.0K Jul 11 07:38</tspan>  <tspan class="term-dir">..</tspan></text>
+      
+      <text y="100"><tspan class="term-muted">-rw-r--r--</tspan>  <tspan class="term-text">abhinav devs   256 Jul 11 07:38</tspan>  <tspan class="term-highlight">GitHub.md</tspan></text>
+      <text y="120"><tspan class="term-muted">-rw-r--r--</tspan>  <tspan class="term-text">abhinav devs   256 Jul 11 07:38</tspan>  <tspan class="term-accent">LinkedIn.md</tspan></text>
+      <text y="140"><tspan class="term-muted">-rw-r--r--</tspan>  <tspan class="term-text">abhinav devs   256 Jul 11 07:38</tspan>  <tspan class="term-pink">LeetCode.md</tspan></text>
+      <text y="160"><tspan class="term-muted">-rw-r--r--</tspan>  <tspan class="term-text">abhinav devs   256 Jul 11 07:38</tspan>  <tspan class="term-highlight">Codeforces.md</tspan></text>
+      <text y="180"><tspan class="term-muted">-rw-r--r--</tspan>  <tspan class="term-text">abhinav devs   256 Jul 11 07:38</tspan>  <tspan class="term-accent">CodeChef.md</tspan></text>
+      
+      <text y="218"><tspan class="term-prompt">❯</tspan> <tspan class="term-dir">~</tspan> <tspan class="term-text">cat Research.txt</tspan></text>
+      <text y="232" class="term-text" fill="#b7bdf8" font-weight="600">"Hermite Wavelet Solution of Singularly Perturbed BVPs"</text>
+      <text y="262" class="term-text" fill="#b7bdf8" font-weight="600"> </text>
+    </g>
   </g>
 
-  <!-- ================= WINDOW 3: BTOP / SKILLS (Bottom Full Width) ================= -->
-  <rect x="20" y="380" width="960" height="250" rx="10" fill="#181825" opacity="0.85" stroke="#89b4fa" stroke-width="1.5" filter="url(#shadow)"/>
-  
-  <text x="500" y="405" class="term-title" text-anchor="middle" fill="#89b4fa">kitty - btop</text>
+  <!-- ===== WINDOW 3 — SKILLS / BTOP (Bottom) ===== -->
+  <g class="card">
+    <rect x="18" y="360" width="964" height="236" rx="12" fill="#181825" opacity="0.90" stroke="url(#border-w3)" stroke-width="1.5" filter="url(#shadow-card)"/>
+    <rect x="18" y="360" width="964" height="236" rx="12" fill="url(#border-w3)" opacity="0.03" class="window-glow"/>
 
-  <!-- Left Side: Focus Bars (Mimicking CPU usage bars in btop) -->
-  <g transform="translate(40, 435)">
-    <rect x="0" y="-15" width="420" height="200" fill="none" stroke="#313244" stroke-width="1" rx="5"/>
-    <text class="term-highlight" x="10" y="5" font-size="12">┌ Focus / Allocation ────────────────────────────</text>
-    
-    <!-- Software Engineering -->
-    <text class="term-text" x="20" y="35">Software Eng.</text>
-    <text class="term-text" x="140" y="35" fill="#f38ba8">[|||||||||||||||||||||||||||||| 95%]</text>
-    
-    <!-- Competitive Programming -->
-    <text class="term-text" x="20" y="70">Comp. Prog.</text>
-    <text class="term-text" x="140" y="70" fill="#cba6f7">[||||||||||||||||||||||||||     85%]</text>
+    <text x="500" y="382" class="term-title" text-anchor="middle">kitty — btop</text>
 
-    <!-- Quantitative Finance -->
-    <text class="term-text" x="20" y="105">Quant Finance</text>
-    <text class="term-text" x="140" y="105" fill="#89b4fa">[||||||||||||||||||||           75%]</text>
+    <!-- Left Panel: Skill Bars -->
+    <g transform="translate(38, 408)">
+      <rect x="-8" y="-12" width="440" height="180" rx="8" fill="none" stroke="#313244" stroke-width="1" stroke-dasharray="5 4" opacity="0.45"/>
+      <text class="term-highlight" x="6" y="4" font-size="11">┌ Focus / Allocation ─────────────────────────┐</text>
+      
+      <!-- Bar 1 -->
+      <text x="14" y="34" class="term-text" font-size="12">Software Eng.</text>
+      <rect x="160" y="28" width="235" height="8" rx="4" fill="#363a4f" opacity="0.55"/>
+      <rect x="160" y="28" width="223" height="8" rx="4" fill="url(#bar-1)" opacity="0.92"/>
+      <text x="410" y="34" class="term-text" font-size="12" fill="#ed8796" font-weight="700">95%</text>
 
-    <!-- Machine Learning -->
-    <text class="term-text" x="20" y="140">Machine Lrn.</text>
-    <text class="term-text" x="140" y="140" fill="#a6e3a1">[||||||||||||||                 60%]</text>
+      <!-- Bar 2 -->
+      <text x="14" y="64" class="term-text" font-size="12">Comp. Prog.</text>
+      <rect x="160" y="58" width="235" height="8" rx="4" fill="#363a4f" opacity="0.55"/>
+      <rect x="160" y="58" width="200" height="8" rx="4" fill="url(#bar-2)" opacity="0.92"/>
+      <text x="410" y="64" class="term-text" font-size="12" fill="#c6a0f6" font-weight="700">85%</text>
+
+      <!-- Bar 3 -->
+      <text x="14" y="94" class="term-text" font-size="12">Quant Finance</text>
+      <rect x="160" y="88" width="235" height="8" rx="4" fill="#363a4f" opacity="0.55"/>
+      <rect x="160" y="88" width="176" height="8" rx="4" fill="url(#bar-3)" opacity="0.92"/>
+      <text x="410" y="94" class="term-text" font-size="12" fill="#8aadf4" font-weight="700">75%</text>
+
+      <!-- Bar 4 -->
+      <text x="14" y="124" class="term-text" font-size="12">Machine Lrn.</text>
+      <rect x="160" y="118" width="235" height="8" rx="4" fill="#363a4f" opacity="0.55"/>
+      <rect x="160" y="118" width="141" height="8" rx="4" fill="url(#bar-4)" opacity="0.92"/>
+      <text x="410" y="124" class="term-text" font-size="12" fill="#a6da95" font-weight="700">60%</text>
+      
+      <text x="14" y="160" class="term-muted" font-size="10">⏻  Powered by curiosity  │  ⚡ Uptime: ∞</text>
+    </g>
+
+    <!-- Right Panel: Threads Table -->
+    <g transform="translate(500, 408)">
+      <rect x="-8" y="-12" width="460" height="180" rx="8" fill="none" stroke="#313244" stroke-width="1" stroke-dasharray="5 4" opacity="0.45"/>
+      <text class="term-highlight" x="6" y="4" font-size="11">┌ Active Threads ─────────────────────────────┐</text>
+      
+      <!-- Table Header -->
+      <text x="14" y="32" class="table-header">
+        <tspan fill="#ed8796">PID</tspan>
+        <tspan fill="#8bd5ca" dx="16">USER</tspan>
+        <tspan fill="#c6a0f6" dx="18">DOMAIN</tspan>
+        <tspan fill="#a6da95" dx="52">STATUS</tspan>
+        <tspan fill="#eed49f" dx="60">TIME</tspan>
+      </text>
+      <line x1="14" y1="37" x2="442" y2="37" stroke="#313244" stroke-width="1" opacity="0.4"/>
+
+      <!-- Thread 1 -->
+      <text x="14" y="60" class="table-cell">
+        <tspan fill="#ed8796">1024</tspan>
+        <tspan dx="15" fill="#cad3f5">abhinav</tspan>
+        <tspan dx="20" fill="#cad3f5">System Design</tspan>
+        <tspan dx="38" class="term-green">● Running</tspan>
+        <tspan dx="52" fill="#8bd5ca">14:20</tspan>
+      </text>
+      
+      <!-- Thread 2 -->
+      <text x="14" y="84" class="table-cell">
+        <tspan fill="#ed8796">2048</tspan>
+        <tspan dx="15" fill="#cad3f5">abhinav</tspan>
+        <tspan dx="20" fill="#cad3f5">Low Lat. Sys</tspan>
+        <tspan dx="42" class="term-green">● Running</tspan>
+        <tspan dx="52" fill="#8bd5ca">08:45</tspan>
+      </text>
+      
+      <!-- Thread 3 -->
+      <text x="14" y="108" class="table-cell">
+        <tspan fill="#f5a97f">4096</tspan>
+        <tspan dx="15" fill="#f5a97f">root</tspan>
+        <tspan dx="36" fill="#f5a97f">Data Struct.</tspan>
+        <tspan dx="42" fill="#eed49f">◐ Sleeping</tspan>
+        <tspan dx="48" fill="#8bd5ca">99:99</tspan>
+      </text>
+      
+      <!-- Thread 4 -->
+      <text x="14" y="132" class="table-cell">
+        <tspan fill="#ed8796">8192</tspan>
+        <tspan dx="15" fill="#cad3f5">abhinav</tspan>
+        <tspan dx="20" fill="#cad3f5">Deep Learning</tspan>
+        <tspan dx="40" class="term-green">● Running</tspan>
+        <tspan dx="52" fill="#8bd5ca">05:30</tspan>
+      </text>
+
+      <!-- Footer -->
+      <line x1="14" y1="148" x2="442" y2="148" stroke="#313244" stroke-width="1" opacity="0.4"/>
+      <text x="14" y="168" font-size="10" fill="#5b6078" font-weight="500">
+        <tspan fill="#8aadf4">&lt;F1&gt;</tspan> Help  
+        <tspan fill="#8aadf4" dx="8">&lt;F2&gt;</tspan> Setup  
+        <tspan fill="#8aadf4" dx="8">&lt;F3&gt;</tspan> Search  
+        <tspan fill="#8aadf4" dx="8">&lt;F4&gt;</tspan> Filter  
+        <tspan fill="#8aadf4" dx="8">&lt;Esc&gt;</tspan> Quit
+      </text>
+    </g>
   </g>
 
-  <!-- Right Side: Domains & Sub-skills (Mimicking memory/processes in btop) -->
-  <g transform="translate(480, 435)">
-    <rect x="0" y="-15" width="460" height="200" fill="none" stroke="#313244" stroke-width="1" rx="5"/>
-    <text class="term-highlight" x="10" y="5" font-size="12">┌ Active Threads ────────────────────────────────</text>
-    
-    <!-- Table Header -->
-    <text class="term-highlight" x="20" y="35" font-size="12" fill="#f38ba8">PID   USER      DOMAIN           STATUS      TIME</text>
-    
-    <!-- Table Content -->
-    <text class="term-text" x="20" y="60">1024  abhinav   System Design    Running     14:20</text>
-    <text class="term-text" x="20" y="85">2048  abhinav   Low Latency Sys  Running     08:45</text>
-    <text class="term-text" x="20" y="110">4096  root      Data Structures  Sleeping    99:99</text>
-    <text class="term-text" x="20" y="135">8192  abhinav   Deep Learning    Running     05:30</text>
-    
-    <!-- Footer / Selectors -->
-    <text class="term-text" x="20" y="170" font-size="11" fill="#6c7086">&lt;F1&gt; Help  &lt;F2&gt; Setup  &lt;F3&gt; Search  &lt;F4&gt; Filter</text>
-  </g>
-
+  <!-- ===== SUBTLE VIGNETTE ===== -->
+  <rect width="1000" height="650" rx="16" fill="url(#border-w1)" opacity="0.012" pointer-events="none"/>
 </svg>
