@@ -1,0 +1,164 @@
+<svg width="1400" height="720"
+viewBox="0 0 1400 720"
+xmlns="http://www.w3.org/2000/svg">
+
+<defs>
+
+<linearGradient id="panel"
+x1="0%" y1="0%"
+x2="100%" y2="100%">
+
+<stop offset="0%" stop-color="#1b1d2b" stop-opacity=".92"/>
+<stop offset="100%" stop-color="#151720" stop-opacity=".92"/>
+
+</linearGradient>
+
+<linearGradient id="accent"
+x1="0%" y1="0%"
+x2="100%" y2="0%">
+
+<stop offset="0%" stop-color="#7aa2f7"/>
+<stop offset="100%" stop-color="#bb9af7"/>
+
+</linearGradient>
+
+<filter id="shadow">
+
+<feDropShadow
+dx="0"
+dy="12"
+stdDeviation="18"
+flood-opacity=".35"/>
+
+</filter>
+
+<style>
+
+.title{
+font-family:'JetBrains Mono',monospace;
+font-size:34px;
+font-weight:700;
+fill:#ffffff;
+}
+
+.subtitle{
+font-family:'JetBrains Mono',monospace;
+font-size:18px;
+fill:#a9b1d6;
+}
+
+.heading{
+font-family:'JetBrains Mono',monospace;
+font-size:16px;
+font-weight:700;
+fill:#7aa2f7;
+}
+
+.text{
+font-family:'JetBrains Mono',monospace;
+font-size:16px;
+fill:#d5d6db;
+}
+
+.small{
+font-family:'JetBrains Mono',monospace;
+font-size:14px;
+fill:#8b93b0;
+}
+
+</style>
+
+</defs>
+
+<!-- Background -->
+
+<rect
+width="1400"
+height="720"
+fill="#0f111a"/>
+
+<!-- Main Window -->
+
+<rect
+
+x="60"
+y="40"
+
+width="1280"
+height="640"
+
+rx="22"
+
+fill="url(#panel)"
+
+stroke="#2a2d3e"
+
+stroke-width="1.5"
+
+filter="url(#shadow)"/>
+
+<!-- Top Bar -->
+
+<rect
+
+x="60"
+
+y="40"
+
+width="1280"
+
+height="48"
+
+rx="22"
+
+fill="#202332"/>
+
+<!-- Fix top radius -->
+
+<rect
+
+x="60"
+
+y="66"
+
+width="1280"
+
+height="22"
+
+fill="#202332"/>
+
+<!-- Window Buttons -->
+
+<circle cx="88" cy="64" r="6" fill="#f7768e"/>
+<circle cx="110" cy="64" r="6" fill="#e0af68"/>
+<circle cx="132" cy="64" r="6" fill="#9ece6a"/>
+
+<!-- Time -->
+
+<text
+
+x="1240"
+
+y="70"
+
+class="small">
+
+Jul 2026
+
+</text>
+
+<!-- Divider -->
+
+<line
+
+x1="60"
+
+y1="88"
+
+x2="1340"
+
+y2="88"
+
+stroke="#2f3348"/>
+
+</svg>
