@@ -160,5 +160,230 @@ x2="1340"
 y2="88"
 
 stroke="#2f3348"/>
+<!-- ================= HERO ================= -->
 
+<!-- Name -->
+
+<text
+x="110"
+y="145"
+class="title">
+
+Abhinav Kumar
+
+</text>
+
+<!-- Online -->
+
+<circle
+cx="1265"
+cy="138"
+r="5"
+fill="#9ece6a"/>
+
+<text
+x="1278"
+y="144"
+class="small">
+
+ONLINE
+
+</text>
+
+<!-- Subtitle -->
+
+<text
+x="110"
+y="178"
+class="subtitle">
+
+Software Engineering • Quantitative Finance • Competitive Programming
+
+</text>
+
+<!-- Thin Divider -->
+
+<line
+
+x1="110"
+
+y1="210"
+
+x2="1290"
+
+y2="210"
+
+stroke="#2d3144"/>
+
+<!-- ================= LEFT COLUMN ================= -->
+
+<text
+x="110"
+y="255"
+class="heading">
+
+Education
+
+</text>
+
+<text
+x="260"
+y="255"
+class="text">
+
+B.Tech · BIT Mesra
+
+</text>
+
+<text
+x="260"
+y="285"
+class="text">
+
+B.Sc.(Hons.) · IIT Guwahati
+
+</text>
+
+<!-- Languages -->
+
+<text
+x="110"
+y="345"
+class="heading">
+
+Languages
+
+</text>
+
+<text
+x="260"
+y="345"
+class="text">
+
+C++   Python   Java   JavaScript   SQL
+
+</text>
+
+<!-- Research -->
+
+<text
+x="110"
+y="435"
+class="heading">
+
+Research
+
+</text>
+
+<text
+x="260"
+y="435"
+class="text">
+
+Hermite Wavelet Solution
+
+</text>
+
+<text
+x="260"
+y="463"
+class="text">
+
+of Singularly Perturbed BVPs
+
+</text>
+
+<!-- ================= RIGHT COLUMN ================= -->
+
+<text
+x="760"
+y="255"
+class="heading">
+
+Learning
+
+</text>
+
+<text
+x="930"
+y="255"
+class="text">
+
+System Design
+
+</text>
+
+<text
+x="930"
+y="285"
+class="text">
+
+Low Latency Systems
+
+</text>
+
+<text
+x="930"
+y="315"
+class="text">
+
+Machine &amp; Deep Learning
+
+</text>
+
+<!-- Profiles -->
+
+<text
+x="760"
+y="435"
+class="heading">
+
+Profiles
+
+</text>
+
+<text
+x="930"
+y="435"
+class="text">
+
+GitHub
+
+</text>
+
+<text
+x="930"
+y="465"
+class="text">
+
+LinkedIn
+
+</text>
+
+<text
+x="930"
+y="495"
+class="text">
+
+LeetCode
+
+</text>
+
+<text
+x="930"
+y="525"
+class="text">
+
+Codeforces
+
+</text>
+
+<text
+x="930"
+y="555"
+class="text">
+
+CodeChef
+
+</text>
 </svg>
