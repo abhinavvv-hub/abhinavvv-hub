@@ -1,9 +1,9 @@
-<svg width="100%" height="100%" viewBox="0 0 1000 650" xmlns="http://www.w3.org/2000/svg" style="max-width: 960px; display: block; margin: 0 auto; background: #0d0d1a; border-radius: 16px; font-family: 'JetBrains Mono', monospace;">
+<svg width="100%" height="100%" viewBox="0 0 1000 650" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="max-width: 960px; display: block; margin: 0 auto; background: #0d0d1a; border-radius: 16px; font-family: 'JetBrains Mono', 'Courier New', monospace;">
   <defs>
     <style>
       @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700;800&amp;display=swap');
       
-      text { font-family: 'JetBrains Mono', 'Courier New', monospace; }
+      text, a text { font-family: 'JetBrains Mono', 'Courier New', monospace; }
       
       .waybar-text { font-size: 11px; fill: #a6adc8; font-weight: 500; }
       .waybar-accent { font-size: 11px; font-weight: 700; }
@@ -20,6 +20,11 @@
       .table-header { font-size: 11px; font-weight: 700; }
       .table-cell { font-size: 11px; font-weight: 400; }
       
+      /* Project listing styles */
+      .project-dot { font-weight: 700; font-size: 11px; }
+      .project-name { font-size: 12px; font-weight: 700; }
+      .project-desc { font-size: 12px; fill: #b8c0e0; }
+      
       .card { transition: filter 0.35s ease; cursor: default; }
       .card:hover { filter: brightness(1.08) drop-shadow(0 0 12px rgba(198, 160, 246, 0.25)); }
       .window-glow { transition: opacity 0.5s ease; }
@@ -34,7 +39,6 @@
         50% { opacity: 0.35; }
       }
       .animate-ambient { animation: ambientPulse 4s ease-in-out infinite; }
-      .animate-cursor { animation: softBlink 1.2s step-end infinite; }
     </style>
 
     <!-- Filters -->
@@ -151,13 +155,13 @@
         <text y="8"><tspan class="term-highlight" font-size="14">abhinav</tspan><tspan class="term-muted" font-size="14">@</tspan><tspan class="term-pink" font-size="14">hyprland</tspan></text>
         <text y="23" class="term-muted">─────────────────</text>
         
-        <text y="44"><tspan class="term-highlight">OS</tspan><tspan class="term-muted">   :</tspan> <tspan class="term-text">Software Engineer</tspan></text>
-        <text y="63"><tspan class="term-highlight">Host</tspan><tspan class="term-muted"> :</tspan> <tspan class="term-text">B.Tech @ BIT Mesra</tspan></text>
-        <text y="82"><tspan class="term-highlight">Kernel</tspan><tspan class="term-muted">:</tspan> <tspan class="term-text">B.Sc. @ IIT Guwahati</tspan></text>
-        <text y="101"><tspan class="term-highlight">Uptime</tspan><tspan class="term-muted">:</tspan> <tspan class="term-text">Learning Continuously</tspan></text>
-        <text y="120"><tspan class="term-highlight">Shell</tspan><tspan class="term-muted"> :</tspan> <tspan class="term-text">C++, Python, Java, JS, SQL</tspan></text>
-        <text y="139"><tspan class="term-highlight">Theme</tspan><tspan class="term-muted"> :</tspan> <tspan class="term-text">Quantitative Finance</tspan></text>
-        <text y="158"><tspan class="term-highlight">WM</tspan><tspan class="term-muted">   :</tspan> <tspan class="term-text">Competitive Programming</tspan></text>
+        <text y="44"><tspan class="term-highlight">OS</tspan><tspan class="term-muted">     :</tspan> <tspan class="term-text">Software Engineer</tspan></text>
+        <text y="63"><tspan class="term-highlight">Host</tspan><tspan class="term-muted">   :</tspan> <tspan class="term-text">B.Tech @ BIT Mesra</tspan></text>
+        <text y="82"><tspan class="term-highlight">Kernel</tspan><tspan class="term-muted">  :</tspan> <tspan class="term-text">B.Sc. @ IIT Guwahati</tspan></text>
+        <text y="101"><tspan class="term-highlight">Uptime</tspan><tspan class="term-muted">  :</tspan> <tspan class="term-text">Learning Continuously</tspan></text>
+        <text y="120"><tspan class="term-highlight">Shell</tspan><tspan class="term-muted">   :</tspan> <tspan class="term-text">C++, Python, Java, JS, SQL</tspan></text>
+        <text y="139"><tspan class="term-highlight">Theme</tspan><tspan class="term-muted">   :</tspan> <tspan class="term-text">Quantitative Finance</tspan></text>
+        <text y="158"><tspan class="term-highlight">WM</tspan><tspan class="term-muted">     :</tspan> <tspan class="term-text">Competitive Programming</tspan></text>
 
         <!-- Color Palette -->
         <g transform="translate(0, 178)">
@@ -174,37 +178,57 @@
     </g>
   </g>
 
-  <!-- ===== WINDOW 2 — PROFILES (Top Right) ===== -->
+  <!-- ===== WINDOW 2 — PROJECTS (Top Right) ===== -->
+  <!-- Replaced profile links with a clean "Projects" listing inspired by @Andrew6rant -->
   <g class="card">
     <rect x="518" y="50" width="464" height="286" rx="12" fill="#181825" opacity="0.90" stroke="url(#border-w2)" stroke-width="1.5" filter="url(#shadow-card)"/>
     <rect x="518" y="50" width="464" height="286" rx="12" fill="url(#border-w2)" opacity="0.03" class="window-glow"/>
 
-    <text x="750" y="72" class="term-title" text-anchor="middle">kitty — zsh</text>
+    <text x="750" y="72" class="term-title" text-anchor="middle">kitty — projects</text>
 
     <g transform="translate(540, 98)">
-      <text y="5"><tspan class="term-prompt">❯</tspan> <tspan class="term-dir">~</tspan> <tspan class="term-text">ls -la Profiles/</tspan></text>
+      <!-- Command -->
+      <text y="5"><tspan class="term-prompt">❯</tspan> <tspan class="term-dir">~</tspan> <tspan class="term-text">ls ~/Projects/</tspan></text>
       
-      <text y="32" class="term-muted">total 24K</text>
-      <text y="52"><tspan class="term-muted">drwxr-xr-x</tspan>  <tspan class="term-text">abhinav devs  4.0K Jul 11 07:38</tspan>  <tspan class="term-dir">.</tspan></text>
-      <text y="72"><tspan class="term-muted">drwxr-xr-x</tspan>  <tspan class="term-text">abhinav devs  4.0K Jul 11 07:38</tspan>  <tspan class="term-dir">..</tspan></text>
+      <!-- Projects list with colored dots and descriptions -->
+      <text y="34">
+        <tspan class="project-dot" fill="#ed8796">●</tspan>
+        <tspan class="project-name" fill="#f5a97f"> Termfolio</tspan>
+        <tspan class="project-desc"> — Terminal-style portfolio website</tspan>
+      </text>
+      <text y="56">
+        <tspan class="project-dot" fill="#a6da95">●</tspan>
+        <tspan class="project-name" fill="#8aadf4"> Dotfiles</tspan>
+        <tspan class="project-desc"> — Hyprland, kitty, neovim configs</tspan>
+      </text>
+      <text y="78">
+        <tspan class="project-dot" fill="#eed49f">●</tspan>
+        <tspan class="project-name" fill="#c6a0f6"> AlgoViz</tspan>
+        <tspan class="project-desc"> — Algorithm visualizer (JS)</tspan>
+      </text>
+      <text y="100">
+        <tspan class="project-dot" fill="#8bd5ca">●</tspan>
+        <tspan class="project-name" fill="#f5bde6"> FinMod</tspan>
+        <tspan class="project-desc"> — Quantitative finance models</tspan>
+      </text>
+      <text y="122">
+        <tspan class="project-dot" fill="#f5a97f">●</tspan>
+        <tspan class="project-name" fill="#a6da95"> CP Suite</tspan>
+        <tspan class="project-desc"> — Competitive programming toolkit</tspan>
+      </text>
+      <text y="144">
+        <tspan class="project-dot" fill="#c6a0f6">●</tspan>
+        <tspan class="project-name" fill="#ed8796"> WaveSolver</tspan>
+        <tspan class="project-desc"> — Hermite wavelet BVP solver (Research)</tspan>
+      </text>
       
-      <a href="https://www.linkedin.com/in/abhinav-kumar-0226a3313/" target="_blank">
-  <img src="linkedin.svg" alt="LinkedIn Row" width="500" />
-</a><br>
-<a href="https://leetcode.com/u/Abhinav1724__/" target="_blank">
-  <img src="leetcode.svg" alt="LeetCode Row" width="500" />
-</a><br>
-<a href="https://codeforces.com/profile/Abhinav___1024" target="_blank">
-  <img src="codeforces.svg" alt="Codeforces Row" width="500" />
-</a><br>
-<a href="https://www.codechef.com/users/abhinav_2410" target="_blank">
-  <img src="codechef.svg" alt="CodeChef Row" width="500" />
-</a>
-
+      <!-- Separator -->
+      <line x1="0" y1="168" x2="390" y2="168" stroke="#313244" stroke-width="1" opacity="0.4" stroke-dasharray="4 3"/>
       
-      <text y="210"><tspan class="term-prompt">❯</tspan> <tspan class="term-dir">~</tspan> <tspan class="term-text">cat Research.txt</tspan></text>
-      <text y="232" class="term-text" fill="#b7bdf8" font-weight="600">"Hermite Wavelet Solution of Singularly Perturbed BVPs"</text>
-      <text y="262" class="term-text" fill="#b7bdf8" font-weight="600"> </text>
+      <!-- Research / Extra info -->
+      <text y="192"><tspan class="term-prompt">❯</tspan> <tspan class="term-dir">~</tspan> <tspan class="term-text">cat Research.txt</tspan></text>
+      <text y="216" class="term-text" fill="#b7bdf8" font-weight="600">"Hermite Wavelet Solution of</text>
+      <text y="236" class="term-text" fill="#b7bdf8" font-weight="600"> Singularly Perturbed BVPs"</text>
     </g>
   </g>
 
