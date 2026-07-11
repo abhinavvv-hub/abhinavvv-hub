@@ -188,38 +188,33 @@
 
     <g transform="translate(540, 98)">
       <!-- Command -->
-      <text y="5"><tspan class="term-prompt">❯</tspan> <tspan class="term-dir">~</tspan> <tspan class="term-text">ls ~/Projects/</tspan></text>
+      <text y="5"><tspan class="term-prompt">❯</tspan> <tspan class="term-dir">~</tspan> <tspan class="term-text">ls ~/Experience/</tspan></text>
       
       <!-- Projects list with colored dots and descriptions -->
       <text y="34">
         <tspan class="project-dot" fill="#ed8796">●</tspan>
         <tspan class="project-name" fill="#f5a97f"> Termfolio</tspan>
-        <tspan class="project-desc"> — Terminal-style portfolio website</tspan>
+        <tspan class="project-desc"> — Terminal-style GitHub README</tspan>
       </text>
       <text y="56">
         <tspan class="project-dot" fill="#a6da95">●</tspan>
-        <tspan class="project-name" fill="#8aadf4"> Dotfiles</tspan>
-        <tspan class="project-desc"> — Hyprland, kitty, neovim configs</tspan>
+        <tspan class="project-name" fill="#8aadf4"> Route Resilience</tspan>
+        <tspan class="project-desc"> — Satellite Imagery and Graph Criticality Analysis </tspan>
       </text>
       <text y="78">
         <tspan class="project-dot" fill="#eed49f">●</tspan>
-        <tspan class="project-name" fill="#c6a0f6"> AlgoViz</tspan>
-        <tspan class="project-desc"> — Algorithm visualizer (JS)</tspan>
+        <tspan class="project-name" fill="#c6a0f6"> Marine Unified Platform</tspan>
+        <tspan class="project-desc"> — Data Lakehouse Architecture with AI Modules</tspan>
       </text>
       <text y="100">
         <tspan class="project-dot" fill="#8bd5ca">●</tspan>
         <tspan class="project-name" fill="#f5bde6"> FinMod</tspan>
-        <tspan class="project-desc"> — Quantitative finance models</tspan>
+        <tspan class="project-desc"> — Limit Order Book </tspan>
       </text>
       <text y="122">
-        <tspan class="project-dot" fill="#f5a97f">●</tspan>
-        <tspan class="project-name" fill="#a6da95"> CP Suite</tspan>
-        <tspan class="project-desc"> — Competitive programming toolkit</tspan>
-      </text>
-      <text y="144">
         <tspan class="project-dot" fill="#c6a0f6">●</tspan>
-        <tspan class="project-name" fill="#ed8796"> WaveSolver</tspan>
-        <tspan class="project-desc"> — Hermite wavelet BVP solver (Research)</tspan>
+        <tspan class="project-name" fill="#ed8796"> Research </tspan>
+        <tspan class="project-desc"> — Hermite wavelet BVP solver</tspan>
       </text>
       
       <!-- Separator -->
