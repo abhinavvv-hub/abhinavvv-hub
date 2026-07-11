@@ -155,16 +155,16 @@
         <text y="8"><tspan class="term-highlight" font-size="14">abhinav</tspan><tspan class="term-muted" font-size="14">@</tspan><tspan class="term-pink" font-size="14">hyprland</tspan></text>
         <text y="23" class="term-muted">─────────────────</text>
         
-        <text y="44"><tspan class="term-highlight">OS</tspan><tspan class="term-muted">     :</tspan> <tspan class="term-text">Software Engineer</tspan></text>
-        <text y="63"><tspan class="term-highlight">Host</tspan><tspan class="term-muted">   :</tspan> <tspan class="term-text">B.Tech @ BIT Mesra</tspan></text>
-        <text y="82"><tspan class="term-highlight">Kernel</tspan><tspan class="term-muted">  :</tspan> <tspan class="term-text">B.Sc. @ IIT Guwahati</tspan></text>
-        <text y="101"><tspan class="term-highlight">Uptime</tspan><tspan class="term-muted">  :</tspan> <tspan class="term-text">Learning Continuously</tspan></text>
-        <text y="120"><tspan class="term-highlight">Shell</tspan><tspan class="term-muted">   :</tspan> <tspan class="term-text">C++, Python, Java, JS, SQL</tspan></text>
-        <text y="139"><tspan class="term-highlight">Theme</tspan><tspan class="term-muted">   :</tspan> <tspan class="term-text">Quantitative Finance</tspan></text>
-        <text y="158"><tspan class="term-highlight">WM</tspan><tspan class="term-muted">     :</tspan> <tspan class="term-text">Competitive Programming</tspan></text>
-
+        <text y="44"><tspan class="term-highlight">OS</tspan><tspan class="term-muted">     :</tspan> <tspan class="term-text">Windows 11, Pop OS!, Android 15</tspan></text>
+        <text y="63"><tspan class="term-highlight">Uptime</tspan><tspan class="term-muted">   :</tspan> <tspan class="term-text">20 years, 7 months, 23 days</tspan></text>
+        <text y="82"><tspan class="term-highlight">Boot Device</tspan><tspan class="term-muted">   :</tspan> <tspan class="term-text">BTech @ BIT Mesra,</tspan></text>
+        <text x="130" y="102"> <tspan class="term-text">BSc @ IIT Guwahati</tspan> </text>
+        <text y="120"><tspan class="term-highlight">Lang.</tspan><tspan class="term-muted">   :</tspan> <tspan class="term-text">C++, Python, Java, JS, SQL, LaTex</tspan></text>
+        <text y="139"><tspan class="term-highlight">EMail</tspan><tspan class="term-muted">   :</tspan> <tspan class="term-text">abhinav.kr.1024@gmail.com</tspan></text>
+        <text y="158"><tspan class="term-highlight">Interest</tspan><tspan class="term-muted">     :</tspan> <tspan class="term-text">Competitive Programming,</tspan></text>
+        <text x="100" y="178"> <tspan class="term-text"> Quant Finance</tspan> </text>
         <!-- Color Palette -->
-        <g transform="translate(0, 178)">
+        <g transform="translate(0, 200)">
           <rect x="0" y="0" width="14" height="14" rx="3" fill="#494d64"/>
           <rect x="18" y="0" width="14" height="14" rx="3" fill="#ed8796"/>
           <rect x="36" y="0" width="14" height="14" rx="3" fill="#a6da95"/>
@@ -184,7 +184,7 @@
     <rect x="518" y="50" width="464" height="286" rx="12" fill="#181825" opacity="0.90" stroke="url(#border-w2)" stroke-width="1.5" filter="url(#shadow-card)"/>
     <rect x="518" y="50" width="464" height="286" rx="12" fill="url(#border-w2)" opacity="0.03" class="window-glow"/>
 
-    <text x="750" y="72" class="term-title" text-anchor="middle">kitty — projects</text>
+    <text x="750" y="72" class="term-title" text-anchor="middle">kitty — Experience</text>
 
     <g transform="translate(540, 98)">
       <!-- Command -->
@@ -199,12 +199,12 @@
       <text y="56">
         <tspan class="project-dot" fill="#a6da95">●</tspan>
         <tspan class="project-name" fill="#8aadf4"> Route Resilience</tspan>
-        <tspan class="project-desc"> — Satellite Imagery and Graph Criticality Analysis </tspan>
+        <tspan class="project-desc"> — Satellite Imagery and Graph Criticality</tspan>
       </text>
       <text y="78">
         <tspan class="project-dot" fill="#eed49f">●</tspan>
         <tspan class="project-name" fill="#c6a0f6"> Marine Unified Platform</tspan>
-        <tspan class="project-desc"> — Data Lakehouse Architecture with AI Modules</tspan>
+        <tspan class="project-desc"> — Data Lakehouse Architecture</tspan>
       </text>
       <text y="100">
         <tspan class="project-dot" fill="#8bd5ca">●</tspan>
@@ -220,10 +220,7 @@
       <!-- Separator -->
       <line x1="0" y1="168" x2="390" y2="168" stroke="#313244" stroke-width="1" opacity="0.4" stroke-dasharray="4 3"/>
       
-      <!-- Research / Extra info -->
-      <text y="192"><tspan class="term-prompt">❯</tspan> <tspan class="term-dir">~</tspan> <tspan class="term-text">cat Research.txt</tspan></text>
-      <text y="216" class="term-text" fill="#b7bdf8" font-weight="600">"Hermite Wavelet Solution of</text>
-      <text y="236" class="term-text" fill="#b7bdf8" font-weight="600"> Singularly Perturbed BVPs"</text>
+     
     </g>
   </g>
 
@@ -242,8 +239,8 @@
       <!-- Bar 1 -->
       <text x="14" y="34" class="term-text" font-size="12">Software Eng.</text>
       <rect x="160" y="28" width="235" height="8" rx="4" fill="#363a4f" opacity="0.55"/>
-      <rect x="160" y="28" width="223" height="8" rx="4" fill="url(#bar-1)" opacity="0.92"/>
-      <text x="410" y="34" class="term-text" font-size="12" fill="#ed8796" font-weight="700">95%</text>
+      <rect x="160" y="28" width="177" height="8" rx="4" fill="url(#bar-1)" opacity="0.92"/>
+      <text x="410" y="34" class="term-text" font-size="12" fill="#ed8796" font-weight="700">75%</text>
 
       <!-- Bar 2 -->
       <text x="14" y="64" class="term-text" font-size="12">Comp. Prog.</text>
@@ -254,16 +251,16 @@
       <!-- Bar 3 -->
       <text x="14" y="94" class="term-text" font-size="12">Quant Finance</text>
       <rect x="160" y="88" width="235" height="8" rx="4" fill="#363a4f" opacity="0.55"/>
-      <rect x="160" y="88" width="176" height="8" rx="4" fill="url(#bar-3)" opacity="0.92"/>
-      <text x="410" y="94" class="term-text" font-size="12" fill="#8aadf4" font-weight="700">75%</text>
+      <rect x="160" y="88" width="212" height="8" rx="4" fill="url(#bar-3)" opacity="0.92"/>
+      <text x="410" y="94" class="term-text" font-size="12" fill="#8aadf4" font-weight="700">90%</text>
 
       <!-- Bar 4 -->
       <text x="14" y="124" class="term-text" font-size="12">Machine Lrn.</text>
       <rect x="160" y="118" width="235" height="8" rx="4" fill="#363a4f" opacity="0.55"/>
-      <rect x="160" y="118" width="141" height="8" rx="4" fill="url(#bar-4)" opacity="0.92"/>
-      <text x="410" y="124" class="term-text" font-size="12" fill="#a6da95" font-weight="700">60%</text>
+      <rect x="160" y="118" width="165" height="8" rx="4" fill="url(#bar-4)" opacity="0.92"/>
+      <text x="410" y="124" class="term-text" font-size="12" fill="#a6da95" font-weight="700">70%</text>
       
-      <text x="14" y="160" class="term-muted" font-size="10">⏻  Powered by curiosity  │  ⚡ Uptime: ∞</text>
+      <text x="14" y="160" class="term-muted" font-size="10">⏻  Powered by curiosity  │  ⚡ Uptime: 20 years</text>
     </g>
 
     <!-- Right Panel: Threads Table -->
@@ -275,9 +272,9 @@
       <text x="14" y="32" class="table-header">
         <tspan fill="#ed8796">PID</tspan>
         <tspan fill="#8bd5ca" dx="16">USER</tspan>
-        <tspan fill="#c6a0f6" dx="18">DOMAIN</tspan>
-        <tspan fill="#a6da95" dx="52">STATUS</tspan>
-        <tspan fill="#eed49f" dx="60">TIME</tspan>
+        <tspan fill="#c6a0f6" dx="40">DOMAIN</tspan>
+        <tspan fill="#a6da95" dx="72">STATUS</tspan>
+        <tspan fill="#eed49f" dx="80">TIME</tspan>
       </text>
       <line x1="14" y1="37" x2="442" y2="37" stroke="#313244" stroke-width="1" opacity="0.4"/>
 
@@ -295,7 +292,7 @@
         <tspan fill="#ed8796">2048</tspan>
         <tspan dx="15" fill="#cad3f5">abhinav</tspan>
         <tspan dx="20" fill="#cad3f5">Low Lat. Sys</tspan>
-        <tspan dx="42" class="term-green">● Running</tspan>
+        <tspan dx="45" class="term-green">● Running</tspan>
         <tspan dx="52" fill="#8bd5ca">08:45</tspan>
       </text>
       
@@ -303,9 +300,9 @@
       <text x="14" y="108" class="table-cell">
         <tspan fill="#f5a97f">4096</tspan>
         <tspan dx="15" fill="#f5a97f">root</tspan>
-        <tspan dx="36" fill="#f5a97f">Data Struct.</tspan>
-        <tspan dx="42" fill="#eed49f">◐ Sleeping</tspan>
-        <tspan dx="48" fill="#8bd5ca">99:99</tspan>
+        <tspan dx="40" fill="#f5a97f">Algo. Analy.</tspan>
+        <tspan dx="46" class="term-green">● Running</tspan>
+        <tspan dx="50" fill="#8bd5ca">99:99</tspan>
       </text>
       
       <!-- Thread 4 -->
