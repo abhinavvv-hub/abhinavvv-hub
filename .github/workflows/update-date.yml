@@ -1,0 +1,28 @@
+name: Update Date in README
+
+on:
+  schedule:
+    - cron: '0 0 * * *'        # runs at 00:00 UTC daily
+  workflow_dispatch:            # allows manual trigger from Actions tab
+
+jobs:
+  update-date:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Replace date in SVG with today’s date
+        run: |
+          # Get today’s date in the format used by your SVG: "Sat, 11 Jul"
+          TODAY=$(date +"%a, %d %b")
+          # Replace the existing date string (e.g. "Sat, 11 Jul") with today's date
+          # The regex matches: three-letter day, comma, space, two-digit date, space, three-letter month
+          sed -i "s/[A-Z][a-z][a-z], [0-9][0-9] [A-Z][a-z][a-z]/$TODAY/g" README.md
+
+      - name: Commit and push if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add README.md
+          git diff --staged --quiet || git commit -m "Update date in README"
+          git push
