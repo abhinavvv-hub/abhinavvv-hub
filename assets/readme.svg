@@ -120,7 +120,7 @@
 
   <!-- Right -->
   <text x="978" y="27" class="waybar-text" text-anchor="end">
-    <tspan class="waybar-accent" fill="#ed8796"></tspan> 12%  <tspan class="waybar-accent" fill="#eed49f"></tspan> 4.2G  <tspan fill="#8bd5ca">│</tspan>  <tspan class="waybar-accent" fill="#8aadf4"></tspan> Abhinav_5G  <tspan fill="#8bd5ca">│</tspan>  <tspan class="waybar-accent" fill="#c6a0f6"></tspan> 80%
+    <tspan class="waybar-accent" fill="#ed8796"></tspan> 12%  <tspan class="waybar-accent" fill="#eed49f"></tspan> 4.2G  <tspan fill="#8bd5ca">│</tspan>  <tspan class="waybar-accent" fill="#8aadf4"></tspan> abhinavvv-hub  <tspan fill="#8bd5ca">│</tspan>  <tspan class="waybar-accent" fill="#c6a0f6"></tspan> 80%
   </text>
 
   <!-- ===== WINDOW 1 — NEOFETCH (Top Left) ===== -->
@@ -188,13 +188,12 @@
       <text y="52"><tspan class="term-muted">drwxr-xr-x</tspan>  <tspan class="term-text">abhinav devs  4.0K Jul 11 07:38</tspan>  <tspan class="term-dir">.</tspan></text>
       <text y="72"><tspan class="term-muted">drwxr-xr-x</tspan>  <tspan class="term-text">abhinav devs  4.0K Jul 11 07:38</tspan>  <tspan class="term-dir">..</tspan></text>
       
-      <text y="100"><tspan class="term-muted">-rw-r--r--</tspan>  <tspan class="term-text">abhinav devs   256 Jul 11 07:38</tspan>  <tspan class="term-highlight">GitHub.md</tspan></text>
-      <text y="120"><tspan class="term-muted">-rw-r--r--</tspan>  <tspan class="term-text">abhinav devs   256 Jul 11 07:38</tspan>  <tspan class="term-accent">LinkedIn.md</tspan></text>
-      <text y="140"><tspan class="term-muted">-rw-r--r--</tspan>  <tspan class="term-text">abhinav devs   256 Jul 11 07:38</tspan>  <tspan class="term-pink">LeetCode.md</tspan></text>
-      <text y="160"><tspan class="term-muted">-rw-r--r--</tspan>  <tspan class="term-text">abhinav devs   256 Jul 11 07:38</tspan>  <tspan class="term-highlight">Codeforces.md</tspan></text>
-      <text y="180"><tspan class="term-muted">-rw-r--r--</tspan>  <tspan class="term-text">abhinav devs   256 Jul 11 07:38</tspan>  <tspan class="term-accent">CodeChef.md</tspan></text>
+      <text y="100"><tspan class="term-muted">-rw-r--r--</tspan>  <tspan class="term-text">abhinav devs   256 Jul 11 07:38</tspan>  <tspan class="term-highlight"><a href="https://www.linkedin.com/in/abhinav-kumar-0226a3313/"> LinkedIn.md </a></tspan></text>
+      <text y="120"><tspan class="term-muted">-rw-r--r--</tspan>  <tspan class="term-text">abhinav devs   256 Jul 11 07:38</tspan>  <tspan class="term-pink"><a href="https://leetcode.com/u/Abhinav1724__/">LeetCode.md</a></tspan></text>
+      <text y="140"><tspan class="term-muted">-rw-r--r--</tspan>  <tspan class="term-text">abhinav devs   256 Jul 11 07:38</tspan>  <tspan class="term-highlight"><a href="https://codeforces.com/profile/Abhinav___1024">Codeforces.md</a></tspan></text>
+      <text y="160"><tspan class="term-muted">-rw-r--r--</tspan>  <tspan class="term-text">abhinav devs   256 Jul 11 07:38</tspan>  <tspan class="term-accent"><a href="https://www.codechef.com/users/abhinav_2410">CodeChef.md</a></tspan></text>
       
-      <text y="218"><tspan class="term-prompt">❯</tspan> <tspan class="term-dir">~</tspan> <tspan class="term-text">cat Research.txt</tspan></text>
+      <text y="210"><tspan class="term-prompt">❯</tspan> <tspan class="term-dir">~</tspan> <tspan class="term-text">cat Research.txt</tspan></text>
       <text y="232" class="term-text" fill="#b7bdf8" font-weight="600">"Hermite Wavelet Solution of Singularly Perturbed BVPs"</text>
       <text y="262" class="term-text" fill="#b7bdf8" font-weight="600"> </text>
     </g>
