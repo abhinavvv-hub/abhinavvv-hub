@@ -2,9 +2,9 @@ name: Update Date & Time in README
 
 on:
   schedule:
-    # Runs at 18:30 UTC = 00:00 IST (midnight India time) every day
-    - cron: '30 18 * * *'
-  workflow_dispatch:   # allows manual trigger
+    # Runs every 15 minutes (to keep the clock current)
+    - cron: '*/15 * * * *'
+  workflow_dispatch:   # manual trigger for testing
 
 jobs:
   update-readme:
@@ -12,22 +12,17 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Replace date and time in SVG with current IST values
+      - name: Replace date and time with current IST
         run: |
-          # Use Indian Standard Time
           export TZ='Asia/Kolkata'
-
-          # Current time in "HH:MM" format (24-hour)
           TIME=$(date +"%H:%M")
-
-          # Current date in "Sat, 11 Jul" format
           DATE=$(date +"%a, %d %b")
 
-          # 1. Replace the time (located after the clock icon and before " │")
-          sed -i "s/\(<\/tspan> \)[0-9][0-9]:[0-9][0-9]\(  │\)/\1$TIME\2/g" README.md
+          # Replace the time (HH:MM) – located right after "</tspan> " and before "  <tspan"
+          sed -i "s|\(</tspan> \)[0-9][0-9]:[0-9][0-9]\(  <tspan\)|\1$TIME\2|g" README.md
 
-          # 2. Replace the date (located after the calendar icon)
-          sed -i "s/\(<\/tspan> \)[A-Z][a-z][a-z], [0-9][0-9] [A-Z][a-z][a-z]/\1$DATE/g" README.md
+          # Replace the date (e.g. Sat, 11 Jul) – located after "</tspan> "
+          sed -i "s|\(</tspan> \)[A-Z][a-z][a-z], [0-9][0-9] [A-Z][a-z][a-z]|\1$DATE|g" README.md
 
       - name: Commit and push if changed
         run: |
