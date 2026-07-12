@@ -119,7 +119,7 @@
 
   <!-- Center -->
   <text x="500" y="27" class="waybar-text" text-anchor="middle">
-    <tspan class="waybar-accent" fill="#f5a97f"></tspan> 16:44  <tspan fill="#8bd5ca">│</tspan>  <tspan class="waybar-accent" fill="#a6da95"></tspan> Sat, 11 Jul
+    <tspan class="waybar-accent" fill="#f5a97f"></tspan> 16:44  <tspan fill="#8bd5ca">│</tspan>  <tspan class="waybar-accent" fill="#a6da95"></tspan> Sun, 12 Jul
   </text>
 
   <!-- Right -->
