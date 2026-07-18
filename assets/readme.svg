@@ -119,7 +119,7 @@
 
   <!-- Center -->
   <text x="500" y="27" class="waybar-text" text-anchor="middle">
-    <tspan class="waybar-accent" fill="#f5a97f"></tspan> 16:44  <tspan fill="#8bd5ca">│</tspan>  <tspan class="waybar-accent" fill="#a6da95"></tspan> Fri, 17 Jul
+    <tspan class="waybar-accent" fill="#f5a97f"></tspan> 16:44  <tspan fill="#8bd5ca">│</tspan>  <tspan class="waybar-accent" fill="#a6da95"></tspan> Sat, 18 Jul
   </text>
 
   <!-- Right -->
@@ -156,7 +156,7 @@
         <text y="23" class="term-muted">─────────────────</text>
         
         <text y="44"><tspan class="term-highlight">OS</tspan><tspan class="term-muted">     :</tspan> <tspan class="term-text">Windows 11, Pop OS!, Android 15</tspan></text>
-        <text y="63"><tspan class="term-highlight">Uptime</tspan><tspan class="term-muted">   :</tspan> <tspan class="term-text">20 years, 7 months, 29 days</tspan></text>
+        <text y="63"><tspan class="term-highlight">Uptime</tspan><tspan class="term-muted">   :</tspan> <tspan class="term-text">20 years, 8 months, 0 days</tspan></text>
         <text y="82"><tspan class="term-highlight">Boot Device</tspan><tspan class="term-muted">   :</tspan> <tspan class="term-text">BTech @ BIT Mesra,</tspan></text>
         <text x="130" y="102"> <tspan class="term-text">BSc @ IIT Guwahati</tspan> </text>
         <text y="120"><tspan class="term-highlight">Lang.</tspan><tspan class="term-muted">   :</tspan> <tspan class="term-text">C++, Python, Java, JS, SQL, LaTex</tspan></text>
